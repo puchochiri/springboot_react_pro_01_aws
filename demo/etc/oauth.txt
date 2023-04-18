@@ -1,0 +1,8 @@
+Todo-App-Oauth-Demo
+http://localhost:8082
+Client ID
+da059d0b26807201a8c9
+application name: Todo-App-Oauth-Demo
+homepageURL : http://localhost:8082
+callback url : http://localhost:8082/oauth2/callback
+client secret : d6c2ca786c1fa3a1f312e879909a8e86a6854bea

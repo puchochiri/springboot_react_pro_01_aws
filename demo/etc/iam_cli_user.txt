@@ -1,0 +1,145 @@
+Console sign-in URL
+
+https://688960338759.signin.aws.amazon.com/console
+
+688960338759
+User name: cli-user
+Console password: boHrm7${
+changed password: awstest1234!
+Access key: AKIA2A2J4PND3H6EZEPP
+Secret access key: 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
+
+============================================================================================
+eb create --database --elb-type application --instance-type t3.micro
+PROD-TODO-API-SERVICE
+prod-todo-api-service-test
+tododb
+12345678
+
+
+PS C:\Users\doawi\git\springboot_react_pro_01_aws\demo> eb create --database --elb-type application --instance-type t2.micro
+Enter Environment Name
+(default is TodoApplication-backend-dev): PROD-TODO-API_SERVICE
+Environment name must be 4 to 40 characters in length. It can only contain letters, numbers, and hyphens. It can not start or end with a hyphen
+Enter Environment Name
+(default is TodoApplication-backend-dev): prod-todo-api-service
+Enter DNS CNAME prefix
+(default is prod-todo-api-service22): prod-todo-api-service-test
+
+Would you like to enable Spot Fleet requests for this environment? (y/N): N
+
+Enter an RDS DB username (default is "ebroot"): tododb
+Enter an RDS DB master password:
+Retype password to confirm:
+Uploading: [##################################################] 100% Done...
+Environment details for: prod-todo-api-service
+  Application name: TodoApplication-backend
+  Region: ap-northeast-2
+  Deployed Version: app-230327_211900494245
+  Environment ID: e-uyvxuxycmn
+  Platform: arn:aws:elasticbeanstalk:ap-northeast-2::platform/Corretto 11 running on 64bit Amazon Linux 2/3.4.5
+  Tier: WebServer-Standard-1.0
+  CNAME: prod-todo-api-service-test.ap-northeast-2.elasticbeanstalk.com
+  Updated: 2023-03-27 12:19:12.460000+00:00
+Printing Status:
+2023-03-27 12:19:11    INFO    createEnvironment is starting.
+2023-03-27 12:19:12    INFO    Using elasticbeanstalk-ap-northeast-2-688960338759 as Amazon S3 storage bucket for environment data.
+2023-03-27 12:19:35    INFO    Created security group named: sg-0be485cea2fdabedf
+2023-03-27 12:19:50    INFO    Created security group named: awseb-e-uyvxuxycmn-stack-AWSEBSecurityGroup-JW2ZKGYB6UON
+2023-03-27 12:19:50    INFO    Created target group named: arn:aws:elasticloadbalancing:ap-northeast-2:688960338759:targetgroup/awseb-AWSEB-6F7XLGD1214T/5dbe18949b6f0bb4
+2023-03-27 12:19:50    INFO    Created Auto Scaling launch configuration named: awseb-e-uyvxuxycmn-stack-AWSEBAutoScalingLaunchConfiguration-b6HFSc5nNjct
+2023-03-27 12:19:50    INFO    Created security group named: awseb-e-uyvxuxycmn-stack-AWSEBRDSDBSecurityGroup-ZAOTA5ICQ5UQ
+2023-03-27 12:20:06    INFO    Creating RDS database named: awseb-e-uyvxuxycmn-stack-awsebrdsdatabase-tibzzvzius9o. This may take a few minutes.
+2023-03-27 12:21:40    INFO    Created load balancer named: arn:aws:elasticloadbalancing:ap-northeast-2:688960338759:loadbalancer/app/awseb-AWSEB-10IXV2I3LN3JU/8148ffecb6f3b74a
+2023-03-27 12:21:56    INFO    Created Load Balancer listener named: arn:aws:elasticloadbalancing:ap-northeast-2:688960338759:listener/app/awseb-AWSEB-10IXV2I3LN3JU/8148ffecb6f3b74a/2b7d0f6b877d4ca9
+2023-03-27 12:26:31    INFO    Created RDS database named: awseb-e-uyvxuxycmn-stack-awsebrdsdatabase-tibzzvzius9o
+2023-03-27 12:27:33    INFO    Created Auto Scaling group named: awseb-e-uyvxuxycmn-stack-AWSEBAutoScalingGroup-PMJ6GOTGJIKD
+2023-03-27 12:27:33    INFO    Waiting for EC2 instances to launch. This may take a few minutes.
+2023-03-27 12:27:49    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:ap-northeast-2:688960338759:scalingPolicy:01555bff-654e-4501-b2e1-8ff706e16fcc:autoScalingGroupName/awseb-e-uyvxuxycmn-stack-AWSEBAutoScalingGroup-PMJ6GOTGJIKD:policyName/awseb-e-uyvxuxycmn-stack-AWSEBAutoScalingScaleUpPolicy-PF2TZJr643oP
+2023-03-27 12:27:49    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:ap-northeast-2:688960338759:scalingPolicy:a0480a08-1c51-486a-931f-6db046786e63:autoScalingGroupName/awseb-e-uyvxuxycmn-stack-AWSEBAutoScalingGroup-PMJ6GOTGJIKD:policyName/awseb-e-uyvxuxycmn-stack-AWSEBAutoScalingScaleDownPolicy-16099x3DTDHH
+2023-03-27 12:27:49    INFO    Created CloudWatch alarm named: awseb-e-uyvxuxycmn-stack-AWSEBCloudwatchAlarmHigh-1KJPQKJBE35Z5
+2023-03-27 12:27:49    INFO    Created CloudWatch alarm named: awseb-e-uyvxuxycmn-stack-AWSEBCloudwatchAlarmLow-3MSHQ6EIBVKA
+2023-03-27 12:27:53    INFO    Instance deployment successfully detected a JAR file in your source bundle.
+2023-03-27 12:27:54    INFO    Instance deployment successfully generated a 'Procfile'.
+2023-03-27 12:27:56    INFO    Instance deployment completed successfully.
+============================================================================================
+
+=============================================================================================
+PS C:\Users\doawi\git\springboot_react_pro_01_aws\demo> ./gradlew release
+Starting a Gradle Daemon, 1 busy and 3 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Task :test
+2023-03-27 21:34:32.716  INFO 12248 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27 21:34:32.716  INFO 12248 --- [ionShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-03-27 21:34:32.735  INFO 12248 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-03-27 21:34:32.745  INFO 12248 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+> Task :release
+eb setenv SPRING_PROFILES_ACTIVE=prod :
+2023-03-27 12:34:35    INFO    Environment update is starting.
+2023-03-27 12:34:48    INFO    Updating environment prod-todo-api-service's configuration settings.
+2023-03-27 12:35:29    INFO    Instance deployment successfully detected a JAR file in your source bundle.
+2023-03-27 12:35:29    INFO    Instance deployment successfully generated a 'Procfile'.
+2023-03-27 12:35:32    INFO    Instance deployment completed successfully.
+2023-03-27 12:36:08    INFO    Successfully deployed new configuration to environment.
+
+eb deploy :
+2023-03-27 12:34:35    INFO    Environment update is starting.
+2023-03-27 12:34:48    INFO    Updating environment prod-todo-api-service's configuration settings.
+2023-03-27 12:35:29    INFO    Instance deployment successfully detected a JAR file in your source bundle.
+2023-03-27 12:35:29    INFO    Instance deployment successfully generated a 'Procfile'.
+2023-03-27 12:35:32    INFO    Instance deployment completed successfully.
+2023-03-27 12:36:08    INFO    Successfully deployed new configuration to environment.
+Uploading: [##################################################] 100% Done...
+2023-03-27 12:36:20    INFO    Environment update is starting.
+2023-03-27 12:36:25    INFO    Deploying new version to instance(s).
+2023-03-27 12:36:29    INFO    Instance deployment successfully detected a JAR file in your source bundle.
+2023-03-27 12:36:29    INFO    Instance deployment successfully generated a 'Procfile'.
+2023-03-27 12:36:32    INFO    Instance deployment completed successfully.
+2023-03-27 12:36:38    INFO    New application version was deployed to running EC2 instances.
+2023-03-27 12:36:39    INFO    Environment update completed successfully.
+
+Release succeeded.
+=============================================================================================
+
+
+
+======================================================================================================
+PS C:\Users\doawi\Documents\01. 개발\01. react 개빌\01. ws\01.todoapp\todo-react-app-aws> eb create --elb-type application --instance-type t3.micro
+Enter Environment Name
+(default is TodoApplication-frontend-dev): PROD-TODO-UI-SERVICE-TEST
+Enter DNS CNAME prefix
+(default is PROD-TODO-UI-SERVICE-TEST): prod-todo-ui-service-test
+
+Would you like to enable Spot Fleet requests for this environment? (y/N): N
+Creating application version archive "app-2411-230328_222629758814".
+Uploading TodoApplication-frontend/app-2411-230328_222629758814.zip to S3. This may take a while.Upload Complete.
+Environment details for: PROD-TODO-UI-SERVICE-TEST
+  Application name: TodoApplication-frontend
+  Region: ap-northeast-2
+  Deployed Version: app-2411-230328_222629758814
+  Environment ID: e-hgiyp3dwy2
+  Platform: arn:aws:elasticbeanstalk:ap-northeast-2::platform/Node.js 16 running on 64bit Amazon 
+Linux 2/5.7.0
+  Tier: WebServer-Standard-1.0
+  CNAME: prod-todo-ui-service-test.ap-northeast-2.elasticbeanstalk.com
+  Updated: 2023-03-28 13:26:36.813000+00:00
+Printing Status:
+2023-03-28 13:26:35    INFO    createEnvironment is starting.
+2023-03-28 13:26:36    INFO    Using elasticbeanstalk-ap-northeast-2-688960338759 as Amazon S3 storage bucket for environment data.
+2023-03-28 13:26:57    INFO    Created security group named: sg-0b565cba1d3972a6f
+2023-03-28 13:27:12    INFO    Created security group named: awseb-e-hgiyp3dwy2-stack-AWSEBSecurityGroup-1253011BRAHQQ
+2023-03-28 13:27:12    INFO    Created target group named: arn:aws:elasticloadbalancing:ap-northeast-2:688960338759:targetgroup/awseb-AWSEB-YSJDCYWJSMYI/e2c8401e62051936
+2023-03-28 13:27:13    INFO    Created Auto Scaling launch configuration named: awseb-e-hgiyp3dwy2-stack-AWSEBAutoScalingLaunchConfiguration-TjL8B7ueAXTz
+2023-03-28 13:27:28    INFO    Created Auto Scaling group named: awseb-e-hgiyp3dwy2-stack-AWSEBAutoScalingGroup-L75DIJNMTETM
+2023-03-28 13:27:28    INFO    Waiting for EC2 instances to launch. This may take a few minutes. 
+2023-03-28 13:27:44    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:ap-northeast-2:688960338759:scalingPolicy:672cc987-0b8c-4d22-b6b3-7f10276b3209:autoScalingGroupName/awseb-e-hgiyp3dwy2-stack-AWSEBAutoScalingGroup-L75DIJNMTETM:policyName/awseb-e-hgiyp3dwy2-stack-AWSEBAutoScalingScaleDownPolicy-yrqVyQOCsYFx
+2023-03-28 13:27:44    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:ap-northeast-2:688960338759:scalingPolicy:9ca6ddc3-6a91-403a-a48b-d3704011610f:autoScalingGroupName/awseb-e-hgiyp3dwy2-stack-AWSEBAutoScalingGroup-L75DIJNMTETM:policyName/awseb-e-hgiyp3dwy2-stack-AWSEBAutoScalingScaleUpPolicy-ZqjX0mDBoOfU
+2023-03-28 13:27:44    INFO    Created CloudWatch alarm named: awseb-e-hgiyp3dwy2-stack-AWSEBCloudwatchAlarmLow-1FIK5P6FGDPQL
+2023-03-28 13:27:44    INFO    Created CloudWatch alarm named: awseb-e-hgiyp3dwy2-stack-AWSEBCloudwatchAlarmHigh-1D3FB2H4LOHTW
+2023-03-28 13:28:30    INFO    Created load balancer named: arn:aws:elasticloadbalancing:ap-northeast-2:688960338759:loadbalancer/app/awseb-AWSEB-15G0L1VCLM87F/6f1448934a680846
+2023-03-28 13:28:30    INFO    Created Load Balancer listener named: arn:aws:elasticloadbalancing:ap-northeast-2:688960338759:listener/app/awseb-AWSEB-15G0L1VCLM87F/6f1448934a680846/7c97d00937109696
+2023-03-28 13:30:04    INFO    Instance deployment completed successfully.
+2023-03-28 13:30:18    INFO    Application available at prod-todo-ui-service-test.ap-northeast-2.elasticbeanstalk.com.
+2023-03-28 13:30:19    INFO    Successfully launched environment: PROD-TODO-UI-SERVICE-TEST  
+======================================================================================================

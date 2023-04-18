@@ -1,0 +1,8 @@
+react
+git add -A
+git commit -m "deploy"
+eb deploy PROD-TODO-UI-SERVICE
+spring
+./gradlew clean
+./gradlew release
+
